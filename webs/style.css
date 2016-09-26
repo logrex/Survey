@@ -13,3 +13,6 @@
   padding: 10%;
   background-color: #e9e7e9;
 }
+.carousel-inner .item img {
+  height: 360px;
+}
