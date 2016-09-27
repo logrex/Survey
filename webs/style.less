@@ -1,14 +1,15 @@
-@_teal:#80cbc4;
+@_teal:#263238;
 @_blacktint:#e9e7e9;
 @_margin-2:2%;
-
+@_grey_darken_3:#37474f;
 .my-font{
 	
 
 }
 
 .my-nav{
-	background-color:@_teal;
+		background-color:@_teal;
+		
 }
 .my-crs{
 
@@ -22,7 +23,7 @@
 .my-pane{
     margin:@_margin-2;
 	padding:10%;
-	background-color:@_blacktint;
+	background-color:fade(@_grey_darken_3,20%);
 }
 .carousel-inner {
 	 .item {
@@ -31,4 +32,16 @@
        height:360px;
      }
 	 }
+}
+.navbar-default{
+.navbar-nav{
+	li{
+		a{
+			background:#ffffff;
+		}
+	}
+}
+}
+.my-hover:hover{
+	background:fade(@_grey_darken_3,20%);
 }
