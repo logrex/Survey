@@ -15,3 +15,7 @@ function onLoad(){
 	brush.stroke(); */
 alert(_height);
 }
+
+function play(){
+	alert("Something done");
+}
