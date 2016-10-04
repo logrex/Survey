@@ -1,53 +1,46 @@
- #parent_div{
-	//width: 220px;
-   // height: 100%;
-   // border: 1px solid black;
-	//z-index:-15;
+#slice_div_1{
+	margin-top:45%;
 }
-#parent_div div {
-	//z-index:-13;
+#slice_div_2{
+	margin-top:22%;
+}
+
+.my-btn-center{
+	margin-top:5%;
+	margin-left:auto;
+	margin-right:auto;
 	display:block;
+	margin-bottom:1%
 }
-
-h1{
-	//z-index:10;
-}
-
-.trapezium {
-	//flex:1;
-	z-index:-10;
- 	width: 280px;
-	height: 280px;
-	margin-top:10%;
-	background: #1e90ff;
-	-webkit-clip-path: polygon(0 38%, 100% 20%, 100% 80%, 0 63%);
-	clip-path: polygon(0 34%, 100% 21%, 100% 80%, 0 67%);
-}
-
-.semi-circle {
-	//flex:1;
-	z-index:-10;
- 	width: 280px;
-	height: 280px;
-	margin-top:10%;
-	background: #1e90ff;
-	-webkit-clip-path: polygon(0 34%, 100% 21%, 100% 80%, 0 67%);
-	clip-path: polygon(0 34%, 100% 21%, 100% 80%, 0 67%);
-}
-
-
 
 
 .img {
-	
-    background: url(mysvg.svg); 
-   /*  width:640px;
-    height:427px;
-    position: absolute;
-    top:0; left:0; z-index:1000;
-    background-color:#fff;
- */}
-.half-circle{
-    content: url(half-circle.svg); 
-
+   background-image: url(http://127.0.0.1/webs/Super_Survey/mysvg.svg ); 
+   background-repeat: no-repeat;
+   width:100%;
+   background-origin: content-box;
+   transform-origin: 0px 50px;
+   animation: go-left 1s ease forwards,go-up 2s 4s ease forwards;
 }
+
+@keyframes go-left{
+    0%{}
+    100%{transform: translateX(-20%)}
+}
+@keyframes go-up{
+    0%{transform: translateX(-20%)}
+    100%{transform: translateY(-25%) translateX(-40%) rotateZ(-70deg); opacity: 0.5;}
+}
+
+
+
+.half-circle{
+   
+    background-image: url(http://127.0.0.1/webs/Super_Survey/half-circle.svg); 
+    background-repeat: no-repeat;
+    width:100%;
+    background-origin: content-box;
+ 
+}
+
+
