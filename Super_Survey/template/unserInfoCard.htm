@@ -1,4 +1,4 @@
-<div class="container col-lg-12 img"  >
+<div class="container col-lg-12 img" " ng-controller="myQuestions">
      <br><br><br>
      <div class="container-fluid col-lg-4">   
         <h4>Q{{questions.number}} : </h4>
@@ -13,29 +13,10 @@
          <button type="button" onclick="play();" class="btn btn-success my-btn-center">Success</button>
      </div>
      <div class="container-fluid-col-lg-2">
-         <i class="container-fluid fa fa-chevron-up fa-3x go-up" ></i>
+       <button type="button" class="container-fluid fa fa-chevron-up fa-3x go-up" onclick="goUp()" style="opacity:0.2;"></button>
          <br>
-         <i class="container-fluid fa fa-chevron-down fa-3x go-down" ></i>
+        <button type="button" class="container-fluid fa fa-chevron-down fa-3x go-down" onclick="goDown()" style="opacity:0.2;"></button>
      
      </div>
      <br><br><br><br><br><br><br><br><br><br><br><br>
-<!--Name: {{user.name}}
-<BR>
-  <div ng-show='!!user.address'>
-    Address:
-    <BR> 
-    Street: {{user.address.street}}
-    <BR>
-    City: {{user.address.city}}
-    <BR>
-    Planet: {{user.address.planet}}
-  </div>
- 
-  <div>
-    <BR>
-      Friends:<BR>
-    <div ng-repeat="friends in quest.data">{{friends.no}}</div>
-  </div>
-  --> 
-
 </div>

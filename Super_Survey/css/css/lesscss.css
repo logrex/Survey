@@ -1,0 +1,57 @@
+#cat {
+  text-align: left;
+  padding: 130px;
+}
+#slice_div_1 {
+  margin-top: 45%;
+}
+#slice_div_2 {
+  margin-top: 22%;
+}
+.my-btn-center {
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 2%;
+}
+.img {
+  background-image: url(http://127.0.0.1/webs/Super_Survey/image/mysvg.svg );
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  transform-origin: 0px 50px;
+  animation: go-left 1s ease forwards, go-up 2s 8s ease forwards;
+  /*animation: hide-start 1s ease forwards;*/
+}
+.half-circle {
+  background-image: url(http://127.0.0.1/webs/Super_Survey/image/half-circle.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-origin: content-box;
+}
+.go-up {
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 5%;
+}
+@keyframes hide-start {
+  100% {
+    transform: translateX(-50%) rotateZ(-90deg);
+  }
+}
+@keyframes go-left {
+  100% {
+    transform: translateX(-20%);
+  }
+}
+@keyframes go-up {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateY(-25%) translateX(-40%) rotateZ(-70deg);
+    opacity: 0.5;
+  }
+}
