@@ -15,9 +15,10 @@
 
     <div class="container-fluid col-lg-8 parent_div"  >
 		<div id="slice_div_2" class="container-fluid ">
-			<div ng-repeat="questions in quest.data">
-				 <zx-user-info-card class="img" ></zx-User-info-card>
+			<div >						
+				 <zx-user-info-card  ng-class="{ 'animate-origin': $first, 'text-danger': $last }"	ng-repeat="quest in questions"  ></zx-User-info-card>
 			</div>
+			
 		</div>
     </div>
     
