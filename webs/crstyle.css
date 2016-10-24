@@ -1,0 +1,6 @@
+.hideable {
+    display: none;
+}
+.visible-mode{
+	display:block;
+}

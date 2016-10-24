@@ -1,0 +1,27 @@
+ <div  ng-class="motion" class="img-1" id='{{$index}}'>
+<div class=" container col-lg-12 "   >
+    
+     <br><br><br>
+     <div class="container-fluid col-lg-4">   
+        <h4>Q{{quest.num}} : </h4>
+        <h5>{{quest.title}}</h5>
+        	
+     </div>
+     <div class="container-fluid col-lg-4">
+        <button type="button" ng-click="testing()" class="btn btn-success my-btn-center">testing</button>
+         <button type="button" onclick="play();" class="btn btn-success my-btn-center">Success</button>
+         <button type="button" onclick="play();" class="btn btn-success my-btn-center">Success</button>
+         <button type="button" onclick="play();" class="btn btn-success my-btn-center">Success</button>
+         <button type="button" onclick="play();" class="btn btn-success my-btn-center">Success</button>
+     </div>
+     <div class="container-fluid-col-lg-2">
+       <!--<zx-tog-up class="container-fluid fa fa-chevron-up fa-3x go-up" onclick="goUp()" style="opacity:0.2;"></zx-tog-up>-->
+         <br>
+        <button type="button" class="container-fluid fa fa-chevron-up fa-3x btn-up" ng-click="moveUp()" style="opacity:0.2;"></button>
+        <br>
+       <button type="button" class="container-fluid fa fa-chevron-down fa-3x btn-down" ng-click="moveDown()" style="opacity:0.2;"></button>
+     
+     </div>
+     <br><br><br><br><br><br><br><br><br><br><br><br>
+     </div>
+</div>
